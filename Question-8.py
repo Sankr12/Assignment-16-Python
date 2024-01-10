@@ -10,9 +10,8 @@ Len=len(tuple1)
 for i in range(0,Len):
     for j in range(0,(Len-i-1)):
         if(tuple1[j][1]>tuple1[j+1][1]):
-            temp = tuple1[j]
-            tuple1[j] = tuple1[j+1]
-            tuple1[j+1] = temp
+            tuple1[j], tuple1[j+1] = tuple1[j+1], tuple1[j]
+
 
 print("Sorted list:",tuple1)
 print()

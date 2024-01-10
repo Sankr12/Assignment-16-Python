@@ -1,7 +1,9 @@
 # Write a python program to reverse a tuple
 
 print()
-t1 = tuple([e for e in input("Enter a tuple: ").split(",")])
+
+num = int(input("Enter a range of element you want to enter: "))
+t1 = tuple(input(f"Enter tuple element {e+1}: ") for e in range(num))
 
 # Before slicing
 print("Original Tuple:",t1)

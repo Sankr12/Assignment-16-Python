@@ -3,5 +3,5 @@
 
 tuple1 = (1,2,3,4,5,6)
 
-tuple2 = tuple(e for e in tuple1[4:6])
+tuple2 = tuple(e for e in tuple1[3:5])
 print("Tuple2:",tuple2)
